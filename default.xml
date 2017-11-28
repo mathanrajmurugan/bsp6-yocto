@@ -9,6 +9,7 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://secogit.seco.com/imx6_release"  name="SecoBSP"/>
 
   <project remote="yocto" revision="dd0ba9ea4a11ab15348d4fe3574e4b28784db82f" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="35b8b9bd9863de208ab60e33b55f10ee43e2619b" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
@@ -29,6 +30,11 @@
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <copyfile src="imx/README" dest="README-IMXBSP"/>
+  </project>
+
+  <project remote="SecoBSP" revision="master" name="meta-seco-bsp-release-2-0-rel.git" path="sources/meta-seco-bsp-release-2-0-rel" >
+     <copyfile src="seco-setup-release.sh" dest="seco-setup-release.sh"/>
+     <copyfile src="seco-yocto_configurator.sh" dest="seco-yocto_configurator.sh"/>
   </project>
 
 </manifest>
