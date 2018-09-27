@@ -32,7 +32,7 @@
      <copyfile src="imx/README" dest="README-IMXBSP"/>
   </project>
 
-  <project remote="SecoBSP" revision="master" name="meta-seco-bsp-release-2-0-rel.git" path="sources/meta-seco-bsp-release-2-0-rel" >
+  <project remote="SecoBSP" revision="master" name="meta-bsp-release-iMX6-4.1.15.git" path="sources/meta-bsp-release-iMX6-4.1.15" >
      <copyfile src="seco-setup-release.sh" dest="seco-setup-release.sh"/>
      <copyfile src="seco-yocto_configurator.sh" dest="seco-yocto_configurator.sh"/>
   </project>
